@@ -1,0 +1,42 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "airbnb-base",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "json"
+  ],
+  "env": {
+    "node": true
+  },
+  "globals": {
+    "PromiseFulfilledResult": "readonly"
+  },
+  "rules": {
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "global-require": "off",
+    "import/no-dynamic-require": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "@typescript-eslint/no-non-null-assertion": "error",
+    "class-methods-use-this": "off",
+    "indent": "off",
+    "max-classes-per-file": "off",
+    "no-underscore-dangle": "off",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+    "no-console": "off",
+    "no-param-reassign": "off",
+    "consistent-return": "off",
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": ["*"], "next": ["block-like", "return", "class"] },
+      { "blankLine": "always", "prev": ["block-like", "return", "class"], "next": ["*"] }
+    ]
+  }
+}
